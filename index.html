@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koperasi Merah Putih - Desa Bondol</title>
+    <link rel="icon" type="image/png" href="KDMP 2.PNG">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <img src="KDMP 2.png" alt="Logo Koperasi" width="150"/>
+  <h1>Koperasi Merah Putih</h1>
+  <p>Desa Bondol, Kec. Ngambon, Kab. Bojonegoro</p>
+</header>
+
+<div id="navbar-container"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('navbar-container').innerHTML = html);
+</script>
+
+<section id="hero">
+  <h2>"Dari Desa, Oleh Desa, Untuk Sejahtera Bersama"</h2>
+  <p>Koperasi Merah Putih hadir untuk mewujudkan kemandirian ekonomi masyarakat Desa Bondol</p>
+</section>
+
+<section id="tentang">
+  <h2>Tentang Koperasi</h2>
+  <p>Koperasi Merah Putih didirikan tahun 2025 di Desa Bondol sebagai bentuk gotong royong ekonomi lokal.</p>
+  <h3>Visi</h3>
+  <p>Menjadi koperasi profesional dan mandiri.</p>
+  <h3>Misi</h3>
+<p>
+  Koperasi Desa Merah Putih (KDMP) berkomitmen untuk memberdayakan potensi lokal, menjunjung transparansi pengelolaan, serta menumbuhkan usaha-usaha produktif demi kesejahteraan masyarakat.
+</p>
+</section>
+
+<section id="kontak">
+  <h2>Kontak Kami</h2>
+  <p><strong>Alamat:</strong> Jl. Raya Ngambon-Tambakrejo No. 23 Desa Bondol</p>
+  <p><strong>Email:</strong> koperasimerahputih.bondol@gmail.com</p>
+  <p><strong>WhatsApp:</strong> 0821-xxxx-xxxx</p>
+</section>
+<footer>
+  <p>&copy; 2025 Koperasi Merah Putih. Semua Hak Dilindungi.</p>
+</footer>
+</body>
+</html>
